@@ -80,13 +80,13 @@ h1, h2, h3 {
 }
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background: white;
     color: black;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Josefin Sans', serif;
 }
 
 .sidebar {
