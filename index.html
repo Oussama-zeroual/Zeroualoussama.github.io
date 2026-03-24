@@ -2,51 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oussama Zeroual | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Oussama Zeroual | Applied Mathematics & AI Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+    <div class="container">
+        <nav>
+            <div class="logo">Oussama Zeroual</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
 
-    <header class="hero">
-        <div class="hero-image" style="background-image: url('images/IMAGE2.jpg');"></div>
-        <h1>Oussama Zeroual</h1>
-        <p class="subtitle">Applied Mathematics • AI • Modeling • Photography</p>
-    </header>
-
-    <main class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hi, I'm Oussama Zeroual, an Applied Mathematics student specialized in modeling, simulation, and AI. I bridge the gap between complex equations and real-world intelligence.</p>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Graph Clustering</h3>
-                    <p>Chinese Whispers and Markov clustering implementations.</p>
+    <main>
+        <!-- Hero Section -->
+        <div class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-badge">Applied Mathematics & AI</div>
+                    <h1>Applied Mathematics Engineer <br> | AI & Modeling</h1>
+                    <p>I work on mathematical modeling, simulation, artificial intelligence, computer vision, and data science projects.</p>
+                    <div class="button-group">
+                        <a href="#projects" class="btn btn-primary" id="viewWorkBtn">📁 View My Work</a>
+                        <a href="#" class="btn btn-outline" id="downloadCVBtn">📄 Download CV</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/oussama-zeroual" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/oussama-zeroual" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:oussama.zeroual@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Sleep Health Prediction</h3>
-                    <p>Stepwise regression model to predict quality of sleep based on lifestyle data.</p>
+                <div class="hero-image">
+                    <div class="profile-placeholder">
+                        <img src="images/IMAGE1.png" alt="Oussama Zeroual">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools / Clients Section -->
+        <div class="container">
+            <div class="tools-grid" id="toolsGrid"></div>
+        </div>
+
+        <!-- About + Stats Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p>I am an Applied Mathematics student specialized in modeling and simulation. I work on AI, machine learning, computer vision, optimization, and mathematical biology projects.</p>
+                        <p>Beyond algorithms and equations, I also do photography, travel content, and creative projects — blending analytical thinking with visual storytelling.</p>
+                    </div>
+                    <div class="stats" id="statsContainer"></div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Let's collaborate on something great.</p>
-            <a href="mailto:your.email@example.com" class="email-link">your.email@example.com</a>
+        <!-- Portfolio / Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container" id="skillsContainer"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-detail"><i class="fas fa-envelope"></i><span>oussama.zeroual@example.com</span></div>
+                        <div class="contact-detail"><i class="fab fa-github"></i><span>github.com/oussama-zeroual</span></div>
+                        <div class="contact-detail"><i class="fab fa-linkedin"></i><span>linkedin.com/in/oussama-zeroual</span></div>
+                        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><span>Algiers, Algeria</span></div>
+                    </div>
+                    <div class="contact-message">
+                        <p>Feel free to reach out for collaborations, research opportunities, or just a chat about AI and mathematical modeling.</p>
+                        <p style="margin-top: 1rem;">📍 Based in Algeria • Open to remote projects</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>© 2025 Oussama Zeroual — Applied Mathematics & AI Portfolio</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
