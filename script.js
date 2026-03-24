@@ -12,4 +12,4 @@ document.querySelectorAll('.sidebar a').forEach(anchor => {
             .scrollIntoView({ behavior: 'smooth' });
     });
  ecdb63b (edited)
-});
+}
